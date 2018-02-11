@@ -13,6 +13,7 @@ class CreditScoreViewController: UIViewController, AlertDisplay {
     @IBOutlet weak var creditScoreLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var maxScoreLabel: UILabel!
     var viewModel: CreditScoreViewModel?
     
     override func viewDidLoad() {
@@ -28,10 +29,13 @@ class CreditScoreViewController: UIViewController, AlertDisplay {
     func bindViewModel(){
         viewModel?.creditScoreClosure = {[weak self] (data) in
                 let creditScore = data[0]
-                //let maxCreditScore = data[1]
+                let maxScore = data[1]
                 // set the view
             DispatchQueue.main.async {
                 self?.creditScoreLabel.text = creditScore
+                self?.maxScoreLabel.text = maxScore
+
+                
             }
         }
         viewModel?.activityClosure = {[weak self] (startIndicator) in
