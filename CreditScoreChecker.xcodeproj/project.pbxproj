@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA41709320303ACA00A36194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41709220303ACA00A36194 /* AppDelegate.swift */; };
+		CA41709520303ACA00A36194 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41709420303ACA00A36194 /* ViewController.swift */; };
+		CA41709820303ACA00A36194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA41709620303ACA00A36194 /* Main.storyboard */; };
+		CA41709A20303ACA00A36194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA41709920303ACA00A36194 /* Assets.xcassets */; };
+		CA41709D20303ACA00A36194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA41709B20303ACA00A36194 /* LaunchScreen.storyboard */; };
+		CA4170A820303ACB00A36194 /* CreditScoreCheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170A720303ACB00A36194 /* CreditScoreCheckerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA4170A420303ACB00A36194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA41708720303ACA00A36194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA41708E20303ACA00A36194;
+			remoteInfo = CreditScoreChecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA41708F20303ACA00A36194 /* CreditScoreChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScoreChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA41709220303ACA00A36194 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA41709420303ACA00A36194 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA41709720303ACA00A36194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA41709920303ACA00A36194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA41709C20303ACA00A36194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA41709E20303ACA00A36194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4170A320303ACB00A36194 /* CreditScoreCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditScoreCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4170A720303ACB00A36194 /* CreditScoreCheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCheckerUITests.swift; sourceTree = "<group>"; };
+		CA4170A920303ACB00A36194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA41708C20303ACA00A36194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4170A020303ACB00A36194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA41708620303ACA00A36194 = {
+			isa = PBXGroup;
+			children = (
+				CA41709120303ACA00A36194 /* CreditScoreChecker */,
+				CA4170A620303ACB00A36194 /* CreditScoreCheckerUITests */,
+				CA41709020303ACA00A36194 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA41709020303ACA00A36194 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA41708F20303ACA00A36194 /* CreditScoreChecker.app */,
+				CA4170A320303ACB00A36194 /* CreditScoreCheckerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA41709120303ACA00A36194 /* CreditScoreChecker */ = {
+			isa = PBXGroup;
+			children = (
+				CA41709220303ACA00A36194 /* AppDelegate.swift */,
+				CA41709420303ACA00A36194 /* ViewController.swift */,
+				CA41709620303ACA00A36194 /* Main.storyboard */,
+				CA41709920303ACA00A36194 /* Assets.xcassets */,
+				CA41709B20303ACA00A36194 /* LaunchScreen.storyboard */,
+				CA41709E20303ACA00A36194 /* Info.plist */,
+			);
+			path = CreditScoreChecker;
+			sourceTree = "<group>";
+		};
+		CA4170A620303ACB00A36194 /* CreditScoreCheckerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA4170A720303ACB00A36194 /* CreditScoreCheckerUITests.swift */,
+				CA4170A920303ACB00A36194 /* Info.plist */,
+			);
+			path = CreditScoreCheckerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA41708E20303ACA00A36194 /* CreditScoreChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4170AC20303ACB00A36194 /* Build configuration list for PBXNativeTarget "CreditScoreChecker" */;
+			buildPhases = (
+				CA41708B20303ACA00A36194 /* Sources */,
+				CA41708C20303ACA00A36194 /* Frameworks */,
+				CA41708D20303ACA00A36194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreditScoreChecker;
+			productName = CreditScoreChecker;
+			productReference = CA41708F20303ACA00A36194 /* CreditScoreChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA4170A220303ACB00A36194 /* CreditScoreCheckerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4170AF20303ACB00A36194 /* Build configuration list for PBXNativeTarget "CreditScoreCheckerUITests" */;
+			buildPhases = (
+				CA41709F20303ACB00A36194 /* Sources */,
+				CA4170A020303ACB00A36194 /* Frameworks */,
+				CA4170A120303ACB00A36194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA4170A520303ACB00A36194 /* PBXTargetDependency */,
+			);
+			name = CreditScoreCheckerUITests;
+			productName = CreditScoreCheckerUITests;
+			productReference = CA4170A320303ACB00A36194 /* CreditScoreCheckerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA41708720303ACA00A36194 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Simone Barbara";
+				TargetAttributes = {
+					CA41708E20303ACA00A36194 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CA4170A220303ACB00A36194 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA41708E20303ACA00A36194;
+					};
+				};
+			};
+			buildConfigurationList = CA41708A20303ACA00A36194 /* Build configuration list for PBXProject "CreditScoreChecker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA41708620303ACA00A36194;
+			productRefGroup = CA41709020303ACA00A36194 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA41708E20303ACA00A36194 /* CreditScoreChecker */,
+				CA4170A220303ACB00A36194 /* CreditScoreCheckerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA41708D20303ACA00A36194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA41709D20303ACA00A36194 /* LaunchScreen.storyboard in Resources */,
+				CA41709A20303ACA00A36194 /* Assets.xcassets in Resources */,
+				CA41709820303ACA00A36194 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4170A120303ACB00A36194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA41708B20303ACA00A36194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA41709520303ACA00A36194 /* ViewController.swift in Sources */,
+				CA41709320303ACA00A36194 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA41709F20303ACB00A36194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4170A820303ACB00A36194 /* CreditScoreCheckerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA4170A520303ACB00A36194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA41708E20303ACA00A36194 /* CreditScoreChecker */;
+			targetProxy = CA4170A420303ACB00A36194 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA41709620303ACA00A36194 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA41709720303ACA00A36194 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA41709B20303ACA00A36194 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA41709C20303ACA00A36194 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA4170AA20303ACB00A36194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA4170AB20303ACB00A36194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA4170AD20303ACB00A36194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = CreditScoreChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.simone.barbara.CreditScoreChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA4170AE20303ACB00A36194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = CreditScoreChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.simone.barbara.CreditScoreChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA4170B020303ACB00A36194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = CreditScoreCheckerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.simone.barbara.CreditScoreCheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreditScoreChecker;
+			};
+			name = Debug;
+		};
+		CA4170B120303ACB00A36194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = CreditScoreCheckerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.simone.barbara.CreditScoreCheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreditScoreChecker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA41708A20303ACA00A36194 /* Build configuration list for PBXProject "CreditScoreChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4170AA20303ACB00A36194 /* Debug */,
+				CA4170AB20303ACB00A36194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA4170AC20303ACB00A36194 /* Build configuration list for PBXNativeTarget "CreditScoreChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4170AD20303ACB00A36194 /* Debug */,
+				CA4170AE20303ACB00A36194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA4170AF20303ACB00A36194 /* Build configuration list for PBXNativeTarget "CreditScoreCheckerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4170B020303ACB00A36194 /* Debug */,
+				CA4170B120303ACB00A36194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA41708720303ACA00A36194 /* Project object */;
+}
