@@ -19,7 +19,9 @@ func createURL(from urlString: String) ->URL? {
     return urlComponent?.url
 }
 
-func createURLRequest(url: URL) -> URLRequest?{
-    let urlRequest = URLRequest(url: url)
-    return urlRequest
+func createURLRequest(url: URL?) -> URLRequest?{
+    if let url = url{
+        return URLRequest(url: url)
+    }
+    return nil
 }

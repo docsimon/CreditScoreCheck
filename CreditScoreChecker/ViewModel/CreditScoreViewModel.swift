@@ -42,9 +42,19 @@ class CreditScoreViewModel {
     // Since score and maxScore are passed as Int we provide here a way to convert them to String,
     // so they are ready to use by the View
     func formatCreditData(creditData: CreditScoreData) -> [String]{
-        let score = String(creditData.score ?? 0)
-        let maxScore = String(creditData.maxScoreValue ?? 0)
-        return [score, maxScore]
+        
+        var arr = [String]()
+        if let score = creditData.score {
+            arr.append(String(score))
+        }else {
+            arr.append("N/A")
+        }
+        if let maxScore = creditData.maxScoreValue{
+            arr.append(String(maxScore))
+        } else{
+            arr.append("N/A")
+        }
+        return arr
     }
     
     // this function fetches credit data fromthe remote endpoint

@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import CreditScoreChecker
+
 class CreditScoreCheckerUITests: XCTestCase {
         
     override func setUp() {
@@ -28,9 +30,8 @@ class CreditScoreCheckerUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFormatCreditData() {
+       
     }
     
 }

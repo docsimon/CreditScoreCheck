@@ -22,7 +22,7 @@ class CreditScoreViewController: UIViewController, AlertDisplay {
         viewModel = CreditScoreViewModel()
         bindViewModel()
         viewModel?.delegate = self
-        viewModel?.fetchCreditData(endpoint: "https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values")
+        viewModel?.fetchCreditData(endpoint: Constants.murl)
     }
     
     func bindViewModel(){

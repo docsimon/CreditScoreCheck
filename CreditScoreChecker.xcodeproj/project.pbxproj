@@ -19,10 +19,19 @@
 		CA4170B920305EB300A36194 /* ClientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170B820305EB300A36194 /* ClientHelper.swift */; };
 		CA4170BB20305FA000A36194 /* DataParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170BA20305FA000A36194 /* DataParsing.swift */; };
 		CA4170BD2030689800A36194 /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170BC2030689800A36194 /* ErrorHelper.swift */; };
+		CA4170CF203095F500A36194 /* CreditScoreCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170CE203095F500A36194 /* CreditScoreCheckerTests.swift */; };
+		CA4170D720309F3100A36194 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170D620309F3100A36194 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CA4170A420303ACB00A36194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA41708720303ACA00A36194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA41708E20303ACA00A36194;
+			remoteInfo = CreditScoreChecker;
+		};
+		CA4170D1203095F500A36194 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CA41708720303ACA00A36194 /* Project object */;
 			proxyType = 1;
@@ -48,6 +57,10 @@
 		CA4170B820305EB300A36194 /* ClientHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHelper.swift; sourceTree = "<group>"; };
 		CA4170BA20305FA000A36194 /* DataParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParsing.swift; sourceTree = "<group>"; };
 		CA4170BC2030689800A36194 /* ErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
+		CA4170CC203095F500A36194 /* CreditScoreCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditScoreCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4170CE203095F500A36194 /* CreditScoreCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCheckerTests.swift; sourceTree = "<group>"; };
+		CA4170D0203095F500A36194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4170D620309F3100A36194 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +78,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA4170C9203095F500A36194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +93,7 @@
 			children = (
 				CA41709120303ACA00A36194 /* CreditScoreChecker */,
 				CA4170A620303ACB00A36194 /* CreditScoreCheckerUITests */,
+				CA4170CD203095F500A36194 /* CreditScoreCheckerTests */,
 				CA41709020303ACA00A36194 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +103,7 @@
 			children = (
 				CA41708F20303ACA00A36194 /* CreditScoreChecker.app */,
 				CA4170A320303ACB00A36194 /* CreditScoreCheckerUITests.xctest */,
+				CA4170CC203095F500A36194 /* CreditScoreCheckerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,17 +112,11 @@
 			isa = PBXGroup;
 			children = (
 				CA41709220303ACA00A36194 /* AppDelegate.swift */,
-				CA41709620303ACA00A36194 /* Main.storyboard */,
+				CA4170C62030943400A36194 /* View */,
 				CA41709920303ACA00A36194 /* Assets.xcassets */,
-				CA41709B20303ACA00A36194 /* LaunchScreen.storyboard */,
 				CA41709E20303ACA00A36194 /* Info.plist */,
-				CA41709420303ACA00A36194 /* CreditScoreViewController.swift */,
-				CA4170B22030413F00A36194 /* CreditScoreViewModel.swift */,
-				CA4170B42030415F00A36194 /* CreditScoreData.swift */,
-				CA4170B620305E4900A36194 /* Client.swift */,
-				CA4170B820305EB300A36194 /* ClientHelper.swift */,
-				CA4170BA20305FA000A36194 /* DataParsing.swift */,
-				CA4170BC2030689800A36194 /* ErrorHelper.swift */,
+				CA4170C72030944000A36194 /* ViewModel */,
+				CA4170C52030942300A36194 /* Model */,
 			);
 			path = CreditScoreChecker;
 			sourceTree = "<group>";
@@ -112,6 +128,46 @@
 				CA4170A920303ACB00A36194 /* Info.plist */,
 			);
 			path = CreditScoreCheckerUITests;
+			sourceTree = "<group>";
+		};
+		CA4170C52030942300A36194 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA4170B42030415F00A36194 /* CreditScoreData.swift */,
+				CA4170B620305E4900A36194 /* Client.swift */,
+				CA4170B820305EB300A36194 /* ClientHelper.swift */,
+				CA4170BA20305FA000A36194 /* DataParsing.swift */,
+				CA4170D620309F3100A36194 /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA4170C62030943400A36194 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA41709620303ACA00A36194 /* Main.storyboard */,
+				CA41709B20303ACA00A36194 /* LaunchScreen.storyboard */,
+				CA41709420303ACA00A36194 /* CreditScoreViewController.swift */,
+				CA4170BC2030689800A36194 /* ErrorHelper.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA4170C72030944000A36194 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA4170B22030413F00A36194 /* CreditScoreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA4170CD203095F500A36194 /* CreditScoreCheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA4170CE203095F500A36194 /* CreditScoreCheckerTests.swift */,
+				CA4170D0203095F500A36194 /* Info.plist */,
+			);
+			path = CreditScoreCheckerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +208,24 @@
 			productReference = CA4170A320303ACB00A36194 /* CreditScoreCheckerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CA4170CB203095F500A36194 /* CreditScoreCheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4170D3203095F500A36194 /* Build configuration list for PBXNativeTarget "CreditScoreCheckerTests" */;
+			buildPhases = (
+				CA4170C8203095F500A36194 /* Sources */,
+				CA4170C9203095F500A36194 /* Frameworks */,
+				CA4170CA203095F500A36194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA4170D2203095F500A36194 /* PBXTargetDependency */,
+			);
+			name = CreditScoreCheckerTests;
+			productName = CreditScoreCheckerTests;
+			productReference = CA4170CC203095F500A36194 /* CreditScoreCheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,6 +241,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					CA4170A220303ACB00A36194 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA41708E20303ACA00A36194;
+					};
+					CA4170CB203095F500A36194 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CA41708E20303ACA00A36194;
@@ -188,6 +267,7 @@
 			targets = (
 				CA41708E20303ACA00A36194 /* CreditScoreChecker */,
 				CA4170A220303ACB00A36194 /* CreditScoreCheckerUITests */,
+				CA4170CB203095F500A36194 /* CreditScoreCheckerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -210,6 +290,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA4170CA203095F500A36194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,6 +312,7 @@
 				CA4170B720305E4900A36194 /* Client.swift in Sources */,
 				CA4170BD2030689800A36194 /* ErrorHelper.swift in Sources */,
 				CA41709320303ACA00A36194 /* AppDelegate.swift in Sources */,
+				CA4170D720309F3100A36194 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +324,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA4170C8203095F500A36194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4170CF203095F500A36194 /* CreditScoreCheckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -243,6 +339,11 @@
 			isa = PBXTargetDependency;
 			target = CA41708E20303ACA00A36194 /* CreditScoreChecker */;
 			targetProxy = CA4170A420303ACB00A36194 /* PBXContainerItemProxy */;
+		};
+		CA4170D2203095F500A36194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA41708E20303ACA00A36194 /* CreditScoreChecker */;
+			targetProxy = CA4170D1203095F500A36194 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -435,6 +536,38 @@
 			};
 			name = Release;
 		};
+		CA4170D4203095F500A36194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = CreditScoreCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.simone.barbara.CreditScoreCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CreditScoreChecker.app/CreditScoreChecker";
+			};
+			name = Debug;
+		};
+		CA4170D5203095F500A36194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZH5BJLYFE;
+				INFOPLIST_FILE = CreditScoreCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.simone.barbara.CreditScoreCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CreditScoreChecker.app/CreditScoreChecker";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,6 +594,15 @@
 			buildConfigurations = (
 				CA4170B020303ACB00A36194 /* Debug */,
 				CA4170B120303ACB00A36194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA4170D3203095F500A36194 /* Build configuration list for PBXNativeTarget "CreditScoreCheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4170D4203095F500A36194 /* Debug */,
+				CA4170D5203095F500A36194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
