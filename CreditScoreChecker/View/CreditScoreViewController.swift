@@ -13,21 +13,29 @@ class CreditScoreViewController: UIViewController, AlertDisplay, CircleSizeFacto
     @IBOutlet weak var creditScoreLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var barItem: UINavigationBar!
     @IBOutlet weak var baseCircleView: BaseCircleView!
     @IBOutlet weak var maxScoreLabel: UILabel!
     var viewModel: CreditScoreViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        baseCircleView.delegate = self
-        activityIndicator.hidesWhenStopped = true
-        creditScoreLabel.text = "N/A"
+        initViews()
         viewModel = CreditScoreViewModel()
         bindViewModel()
         viewModel?.delegate = self
         viewModel?.fetchCreditData(endpoint: Constants.murl)
     }
     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
+
     func bindViewModel(){
         viewModel?.creditScoreClosure = {[weak self] (data) in
                 let creditScore = data[0]
@@ -55,6 +63,12 @@ class CreditScoreViewController: UIViewController, AlertDisplay, CircleSizeFacto
         viewModel?.fetchCreditData(endpoint: Constants.murl)
     }
     
+    func initViews(){
+        barItem.topItem?.title = Constants.navigationBarTitle
+        baseCircleView.delegate = self
+        activityIndicator.hidesWhenStopped = true
+        creditScoreLabel.text = "N/A"
+    }
 }
 
 extension CreditScoreViewController {
@@ -62,4 +76,3 @@ extension CreditScoreViewController {
         return 5
     }
 }
-
