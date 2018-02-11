@@ -46,6 +46,9 @@ class CreditScoreViewController: UIViewController, AlertDisplay {
             self?.present(alert, animated: true)
         })
     }
-
+    @IBAction func reloadScoreData(_ sender: Any) {
+        viewModel?.fetchCreditData(endpoint: Constants.murl)
+    }
+    
 }
 
