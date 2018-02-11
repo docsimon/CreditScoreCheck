@@ -8,16 +8,18 @@
 
 import UIKit
 
-class CreditScoreViewController: UIViewController, AlertDisplay {
+class CreditScoreViewController: UIViewController, AlertDisplay, CircleSizeFactor {
     
     @IBOutlet weak var creditScoreLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var baseCircleView: BaseCircleView!
     @IBOutlet weak var maxScoreLabel: UILabel!
     var viewModel: CreditScoreViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        baseCircleView.delegate = self
         activityIndicator.hidesWhenStopped = true
         creditScoreLabel.text = "N/A"
         viewModel = CreditScoreViewModel()
@@ -35,7 +37,6 @@ class CreditScoreViewController: UIViewController, AlertDisplay {
                 self?.creditScoreLabel.text = creditScore
                 self?.maxScoreLabel.text = maxScore
 
-                
             }
         }
         viewModel?.activityClosure = {[weak self] (startIndicator) in
@@ -54,5 +55,11 @@ class CreditScoreViewController: UIViewController, AlertDisplay {
         viewModel?.fetchCreditData(endpoint: Constants.murl)
     }
     
+}
+
+extension CreditScoreViewController {
+    var sizeFactor: CGFloat {
+        return 5
+    }
 }
 

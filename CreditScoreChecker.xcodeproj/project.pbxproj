@@ -21,6 +21,7 @@
 		CA4170BD2030689800A36194 /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170BC2030689800A36194 /* ErrorHelper.swift */; };
 		CA4170CF203095F500A36194 /* CreditScoreCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170CE203095F500A36194 /* CreditScoreCheckerTests.swift */; };
 		CA4170D720309F3100A36194 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170D620309F3100A36194 /* Constants.swift */; };
+		CA4170D92030AE0E00A36194 /* BaseCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170D82030AE0E00A36194 /* BaseCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		CA4170CE203095F500A36194 /* CreditScoreCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCheckerTests.swift; sourceTree = "<group>"; };
 		CA4170D0203095F500A36194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA4170D620309F3100A36194 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CA4170D82030AE0E00A36194 /* BaseCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				CA41709B20303ACA00A36194 /* LaunchScreen.storyboard */,
 				CA41709420303ACA00A36194 /* CreditScoreViewController.swift */,
 				CA4170BC2030689800A36194 /* ErrorHelper.swift */,
+				CA4170D82030AE0E00A36194 /* BaseCircleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				CA4170B32030413F00A36194 /* CreditScoreViewModel.swift in Sources */,
 				CA4170B52030415F00A36194 /* CreditScoreData.swift in Sources */,
 				CA41709520303ACA00A36194 /* CreditScoreViewController.swift in Sources */,
+				CA4170D92030AE0E00A36194 /* BaseCircleView.swift in Sources */,
 				CA4170B720305E4900A36194 /* Client.swift in Sources */,
 				CA4170BD2030689800A36194 /* ErrorHelper.swift in Sources */,
 				CA41709320303ACA00A36194 /* AppDelegate.swift in Sources */,

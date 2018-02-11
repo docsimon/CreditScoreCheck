@@ -31,7 +31,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YwQ-XE-Ww2">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YwQ-XE-Ww2" customClass="BaseCircleView" customModule="CreditScoreChecker" customModuleProvider="target">
                                 <rect key="frame" x="14" y="64" width="348" height="350"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your credit score is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOP-m7-EBz">
@@ -67,7 +67,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YwQ-XE-Ww2" secondAttribute="height" multiplier="174:175" id="0mv-j4-aAM"/>
                                     <constraint firstItem="uNG-tl-Blm" firstAttribute="top" secondItem="GJ6-uT-sxe" secondAttribute="bottom" constant="36" id="1vT-CE-EZ1"/>
@@ -94,6 +94,7 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="9Z9-TR-dJV" id="QCu-FZ-Dg6"/>
+                        <outlet property="baseCircleView" destination="YwQ-XE-Ww2" id="p7J-qt-SEF"/>
                         <outlet property="creditScoreLabel" destination="GJ6-uT-sxe" id="dOf-zC-nZP"/>
                         <outlet property="maxScoreLabel" destination="bwU-La-xED" id="aHm-Bd-ekx"/>
                     </connections>
