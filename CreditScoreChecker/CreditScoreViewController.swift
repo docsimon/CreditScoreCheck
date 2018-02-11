@@ -11,17 +11,16 @@ import UIKit
 class CreditScoreViewController: UIViewController, AlertDisplay {
     
     @IBOutlet weak var creditScoreLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var viewModel: CreditScoreViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        activityIndicator.hidesWhenStopped = true
         creditScoreLabel.text = "N/A"
         viewModel = CreditScoreViewModel()
         bindViewModel()
-        //let pippo = viewModel?.creditScoreData
-        //viewModel?.creditScoreData = CreditScoreData(score: 500, maxScoreValue: 700)
         viewModel?.delegate = self
         viewModel?.fetchCreditData(endpoint: "https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values")
     }
@@ -33,6 +32,11 @@ class CreditScoreViewController: UIViewController, AlertDisplay {
                 // set the view
             DispatchQueue.main.async {
                 self?.creditScoreLabel.text = creditScore
+            }
+        }
+        viewModel?.activityClosure = {[weak self] (startIndicator) in
+            DispatchQueue.main.async {
+                startIndicator == true ? self?.activityIndicator.startAnimating() : self?.activityIndicator.stopAnimating()
             }
         }
     }

@@ -36,22 +36,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="9Z9-TR-dJV">
+                                <rect key="frame" x="177" y="263" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yOP-m7-EBz" secondAttribute="trailing" id="0H8-d7-kpj"/>
                             <constraint firstItem="GJ6-uT-sxe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Wj-BK-Gq0"/>
+                            <constraint firstItem="9Z9-TR-dJV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="Dtp-pj-q9O"/>
                             <constraint firstItem="yOP-m7-EBz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EiY-mJ-aYR"/>
                             <constraint firstItem="yOP-m7-EBz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="164" id="M7w-wh-sln"/>
                             <constraint firstItem="SFH-Wf-5eb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UxB-4z-6E5"/>
                             <constraint firstItem="GJ6-uT-sxe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="c38-k6-r69"/>
                             <constraint firstItem="SFH-Wf-5eb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mUa-DR-caW"/>
                             <constraint firstItem="GJ6-uT-sxe" firstAttribute="top" secondItem="yOP-m7-EBz" secondAttribute="bottom" constant="38" id="rX2-km-GWl"/>
+                            <constraint firstItem="9Z9-TR-dJV" firstAttribute="top" secondItem="yOP-m7-EBz" secondAttribute="bottom" constant="58" id="tFR-Th-06t"/>
                             <constraint firstItem="SFH-Wf-5eb" firstAttribute="top" secondItem="GJ6-uT-sxe" secondAttribute="bottom" constant="20" id="wH8-5U-fjo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="9Z9-TR-dJV" id="QCu-FZ-Dg6"/>
                         <outlet property="creditScoreLabel" destination="GJ6-uT-sxe" id="dOf-zC-nZP"/>
                     </connections>
                 </viewController>
