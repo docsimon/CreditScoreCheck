@@ -18,13 +18,12 @@ func parseCreditCheckJson(data: Data, completion: CompletionClosure){
     do {
         jsonResponse = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String : Any]
     }catch {
-        print("Json parsing error")
-        sendError("Json parsing error", "parseCreditCheckJson", completion: completion)
+        sendError(Constants.jsonError, "parseCreditCheckJson", completion: completion)
         return
     }
     
     guard let response = jsonResponse, let creditReportInfo = response["creditReportInfo"] as? [String:Any] else{
-        sendError("Json parsing error", "parseCreditCheckJson", completion: completion)
+        sendError(Constants.jsonError, "parseCreditCheckJson", completion: completion)
         return
     }
     

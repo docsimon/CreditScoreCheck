@@ -24,13 +24,13 @@ func makeConnection(request: URLRequest, jsonHandler: @escaping JsonHandlerFunct
                 return
             }
         }else {
-            sendError("Status code unknown", "makeConnection", completion: completion)
+            sendError(Constants.statusCodeError, "makeConnection", completion: completion)
             return
         }
         
         // data checking
         guard let data = data else {
-            sendError("Error receiving the Data", "makeConnection", completion: completion)
+            sendError(Constants.dataError, "makeConnection", completion: completion)
             return
         }
         
