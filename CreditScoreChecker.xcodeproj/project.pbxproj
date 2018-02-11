@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		CA41709320303ACA00A36194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41709220303ACA00A36194 /* AppDelegate.swift */; };
-		CA41709520303ACA00A36194 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41709420303ACA00A36194 /* ViewController.swift */; };
+		CA41709520303ACA00A36194 /* CreditScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41709420303ACA00A36194 /* CreditScoreViewController.swift */; };
 		CA41709820303ACA00A36194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA41709620303ACA00A36194 /* Main.storyboard */; };
 		CA41709A20303ACA00A36194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA41709920303ACA00A36194 /* Assets.xcassets */; };
 		CA41709D20303ACA00A36194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA41709B20303ACA00A36194 /* LaunchScreen.storyboard */; };
 		CA4170A820303ACB00A36194 /* CreditScoreCheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170A720303ACB00A36194 /* CreditScoreCheckerUITests.swift */; };
+		CA4170B32030413F00A36194 /* CreditScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170B22030413F00A36194 /* CreditScoreViewModel.swift */; };
+		CA4170B52030415F00A36194 /* CreditScoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170B42030415F00A36194 /* CreditScoreData.swift */; };
+		CA4170B720305E4900A36194 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170B620305E4900A36194 /* Client.swift */; };
+		CA4170B920305EB300A36194 /* ClientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170B820305EB300A36194 /* ClientHelper.swift */; };
+		CA4170BB20305FA000A36194 /* DataParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170BA20305FA000A36194 /* DataParsing.swift */; };
+		CA4170BD2030689800A36194 /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4170BC2030689800A36194 /* ErrorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +34,7 @@
 /* Begin PBXFileReference section */
 		CA41708F20303ACA00A36194 /* CreditScoreChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScoreChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA41709220303ACA00A36194 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA41709420303ACA00A36194 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA41709420303ACA00A36194 /* CreditScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreViewController.swift; sourceTree = "<group>"; };
 		CA41709720303ACA00A36194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA41709920303ACA00A36194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA41709C20303ACA00A36194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,12 @@
 		CA4170A320303ACB00A36194 /* CreditScoreCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditScoreCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4170A720303ACB00A36194 /* CreditScoreCheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCheckerUITests.swift; sourceTree = "<group>"; };
 		CA4170A920303ACB00A36194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4170B22030413F00A36194 /* CreditScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreViewModel.swift; sourceTree = "<group>"; };
+		CA4170B42030415F00A36194 /* CreditScoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreData.swift; sourceTree = "<group>"; };
+		CA4170B620305E4900A36194 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		CA4170B820305EB300A36194 /* ClientHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHelper.swift; sourceTree = "<group>"; };
+		CA4170BA20305FA000A36194 /* DataParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParsing.swift; sourceTree = "<group>"; };
+		CA4170BC2030689800A36194 /* ErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +90,17 @@
 			isa = PBXGroup;
 			children = (
 				CA41709220303ACA00A36194 /* AppDelegate.swift */,
-				CA41709420303ACA00A36194 /* ViewController.swift */,
 				CA41709620303ACA00A36194 /* Main.storyboard */,
 				CA41709920303ACA00A36194 /* Assets.xcassets */,
 				CA41709B20303ACA00A36194 /* LaunchScreen.storyboard */,
 				CA41709E20303ACA00A36194 /* Info.plist */,
+				CA41709420303ACA00A36194 /* CreditScoreViewController.swift */,
+				CA4170B22030413F00A36194 /* CreditScoreViewModel.swift */,
+				CA4170B42030415F00A36194 /* CreditScoreData.swift */,
+				CA4170B620305E4900A36194 /* Client.swift */,
+				CA4170B820305EB300A36194 /* ClientHelper.swift */,
+				CA4170BA20305FA000A36194 /* DataParsing.swift */,
+				CA4170BC2030689800A36194 /* ErrorHelper.swift */,
 			);
 			path = CreditScoreChecker;
 			sourceTree = "<group>";
@@ -199,7 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA41709520303ACA00A36194 /* ViewController.swift in Sources */,
+				CA4170B920305EB300A36194 /* ClientHelper.swift in Sources */,
+				CA4170BB20305FA000A36194 /* DataParsing.swift in Sources */,
+				CA4170B32030413F00A36194 /* CreditScoreViewModel.swift in Sources */,
+				CA4170B52030415F00A36194 /* CreditScoreData.swift in Sources */,
+				CA41709520303ACA00A36194 /* CreditScoreViewController.swift in Sources */,
+				CA4170B720305E4900A36194 /* Client.swift in Sources */,
+				CA4170BD2030689800A36194 /* ErrorHelper.swift in Sources */,
 				CA41709320303ACA00A36194 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
